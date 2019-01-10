@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest>
+    <identifier>SimpleSlings</identifier>
+    <version>0.0.1</version>
+    <manifestUri>https://raw.githubusercontent.com/Zuthal/SimpleSlings/master/About/Manifest.xml</manifestUri>
+    <downloadUri>https://github.com/Zuthal/SimpleSlings/releases/latest</downloadUri>
+</Manifest>
