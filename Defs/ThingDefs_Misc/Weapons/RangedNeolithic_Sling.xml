@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BaseWeaponNeolithic">
+    <defName>Sling</defName>
+    <label>sling</label>
+    <description>A sling, made from corded fibers or leather, used to hurl stones harder than one could by hand.</description>
+    <techLevel>Neolithic</techLevel>
+    <graphicData>
+     	<texPath>Things/Item/Equipment/WeaponRanged/BowShort</texPath>
+    	<graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Bow_Small</soundInteract>
+    <costStuffCount>50</costStuffCount>
+    <stuffCategories>
+    	<li>Fabric</li>
+    	<li>Leathery</li>
+    </stuffCategories>
+    <statBases>
+    	<WorkToMake>6000</WorkToMake>
+    	<Mass>0.4</Mass>
+    	<AccuracyTouch>0.85</AccuracyTouch>
+    	<AccuracyShort>0.9</AccuracyShort>
+    	<AccuracyMedium>0.5</AccuracyMedium>
+    	<AccuracyLong>0.1</AccuracyLong>
+    	<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+    	<li>NeolithicRangedBasic</li>
+    </weaponTags>
+    <recipeMaker>
+    	<recipeUsers>
+    		<li>CraftingSpot</li>
+    	</recipeUsers>
+    	<skillRequirements>
+    		<Crafting>4</Crafting>
+    	</skillRequirements>
+    </recipeMaker>
+    <verbs>
+    	<li>
+    		<verbClass>Verb_Shoot</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+        	<defaultProjectile>Arrow_Short</defaultProjectile>
+        	<warmupTime>1.3</warmupTime>
+        	<range>24.9</range>
+        	<soundCast>Bow_Small</soundCast>
+    	</li>
+    </verbs>
+    <tools>
+      <li>
+        <label>pouch</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>Sling_Stone</defName>
+    <label>slung stone</label>
+    <graphicData>
+      <texPath>Things/Projectile/Arrow_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>Stone</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+      <speed>35</speed>
+    </projectile>
+  </ThingDef>
+</Defs>
